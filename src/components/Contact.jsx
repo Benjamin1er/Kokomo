@@ -70,6 +70,7 @@ const Contact = () => {
             type="Message"
             name="c_content"
             id="c_content"
+            value={message}
             onChange={(e) => setMessage(e.target.value)}
             cols="35"
             rows="7"></textarea>
