@@ -1,0 +1,89 @@
+.footer-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 4em;
+  background-color: #9ac2ba;
+  position: fixed;
+  bottom: 0%;
+}
+
+a.facebook,
+a.instagram,
+.bookmark-fav,
+button.burger {
+  color: white;
+  padding: 0px 10px;
+}
+
+a:hover.facebook,
+a:hover.instagram,
+.bookmark-fav:hover {
+  color: #518a8b;
+}
+
+a:focus.facebook,
+a:focus.instagram,
+.bookmark-fav:focus {
+  color: #518a8b;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: flex-end;
+  width: 45%;
+}
+.footer-link {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #f6f2f1;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: clamp(17px, 4vw, 1rem);
+}
+
+.footer-link:hover {
+  color: #518a8b;
+}
+.footer-link:focus {
+  color: #518a8b;
+}
+
+@media screen and (min-width: 688px) {
+  .footer-icons {
+    display: flex;
+    justify-content: flex-end;
+    width: 85%;
+  }
+  a.facebook,
+  a.instagram,
+  .bookmark-fav {
+    padding: 0px 30px;
+  }
+  button.burger {
+    display: none;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1.4);
+  }
+
+  35% {
+    transform: scale(1.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  65% {
+    transform: scale(1.4);
+  }
+
+  80% {
+    transform: scale(1);
+  }
+}

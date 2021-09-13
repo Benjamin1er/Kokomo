@@ -1,0 +1,138 @@
+.top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-image: url("../assets/pattern.jpg");
+  background-repeat: repeat repeat;
+  background-size: 40%;
+  border: solid 1px #5b4828;
+}
+
+.h-title {
+  font-size: 2rem;
+  text-align: center;
+  border: solid 1px;
+  background-color: #f6f2f1;
+  padding-top: 20px;
+  height: 100px;
+  width: 280px;
+}
+
+#input-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 40px;
+  border-radius: 200px;
+  text-align: center;
+  border: none;
+  outline: none;
+  box-shadow: -1px 5px 3px -3px rgba(64, 37, 37, 0.71) inset;
+  font-family: "Roboto", sans-serif;
+  color: #918c89;
+  background-color: rgb(241, 241, 241);
+}
+
+.suggest-ul {
+  border-radius: 30px;
+  list-style-type: none;
+  background-color: rgb(250, 250, 250);
+}
+
+.result {
+  text-align: center;
+  width: 50%;
+  height: 2px;
+  z-index: 10;
+}
+
+.suggest {
+  font-family: "lato", sans-serif;
+  text-decoration: none;
+  color: #f39d9e;
+}
+
+.suggest-li {
+  padding: 5px 0px;
+}
+
+.suggest-li a:hover {
+  color: #47af98;
+}
+
+.parents-search {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/pattern-flower.jpeg");
+  background-repeat: repeat-x;
+  background-size: 60%;
+}
+
+.link-kokomo {
+  text-decoration: none;
+  color: #5b4828;
+}
+
+/* if device width is greater than or equals to 688px */
+@media only screen and (min-width: 688px) {
+  .top-header {
+    display: flex;
+    background-image: url("../assets/pattern-flower.jpeg");
+    background-repeat: repeat-x;
+    background-size: 40%;
+    width: 100%;
+    height: 180px;
+  }
+
+  .leaves-background-title {
+    background-image: url("../assets/pattern.jpg");
+    background-repeat: repeat-x;
+    background-size: 40%;
+    width: 580px;
+    height: 180px;
+    border: solid 1px #5b4828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parents-search {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+  }
+
+  #input-search {
+    width: 450px;
+    height: 40px;
+    border-radius: 200px;
+    text-align: center;
+    border: none;
+    outline: none;
+    box-shadow: -1px 5px 3px -3px rgba(64, 37, 37, 0.71) inset;
+    font-family: "Roboto", sans-serif;
+    color: #918c89;
+  }
+
+  .h-title {
+    height: 90px;
+    width: 280px;
+    text-align: center;
+  }
+
+  .result {
+    text-align: center;
+    width: 32%;
+    height: 2px;
+    z-index: 10;
+  }
+}

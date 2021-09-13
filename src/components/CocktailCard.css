@@ -1,0 +1,59 @@
+.card-container {
+  margin: 10px;
+  width: 90%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cocktail-card {
+  background-color: #518a8b;
+  width: 90%;
+  height: 50%;
+}
+.grand-background {
+  display: flex;
+  justify-content: center;
+}
+.parent-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  width: 80%;
+  margin-bottom: 10px;
+  background-image: url("../assets/pattern.jpg");
+  background-repeat: repeat-x;
+  background-size: 100%;
+}
+
+.child-background {
+  width: 100%;
+  padding: 10px;
+  background-color: #36685d;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlink {
+  display: block;
+}
+
+.pattern {
+  font-size: 20%;
+}
+
+@media only screen and (min-width: 688px) {
+  .card-container {
+    width: 20%;
+  }
+  .image-list {
+    filter: grayscale(100%);
+  }
+  .image-list:hover {
+    filter: none;
+  }
+}

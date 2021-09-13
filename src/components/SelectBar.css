@@ -1,0 +1,17 @@
+.MuiButtonBase-root {
+  font-weight: 500;
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+/* desktop */
+@media screen and (min-width: 688px) {
+  .buttons-container {
+    display: flex;
+    background-color: #f6f2f1;
+    justify-content: flex-end;
+    box-shadow: 0px 2px 4px 0px #2d353540;
+    height: 50px;
+  }
+}

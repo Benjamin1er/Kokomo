@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;500;700&family=Cookie&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+li,
+input,
+textarea,
+label,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: clamp(
+    1rem,
+    10vw,
+    1rem
+  ); /* (min allowed font-size, font-size that you wish to always have, max allowed font-size) */
+  font-weight: 700;
+  font-family: Roboto;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f6f2f1;
+}
+
+h5 {
+  width: 100%;
+  font-family: "Cookie", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0px 10px 0px 10px;
+  color: #f39d9e;
+  line-height: 2.5rem;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+@media only screen and (min-width: 688px) {
+  h5 {
+    font-size: 4rem;
+    margin: 0px 10px 30px 10px;
+  }
+}

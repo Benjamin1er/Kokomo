@@ -1,3 +1,77 @@
+/* Règles de dimensionnement des boîtes */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Retirer le rembourrage (zone de remplissage) par défaut */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Retirer les marges par défaut */
+body,
+h1,
+h2,
+h3,
+h4,
+h5 p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Définir les défauts élémentaires du corps */
 body {
-    margin: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Retirer les styles de liste sur les éléments ul, ol qui ont un attribut class */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Les éléments a qui n'ont pas de classes reçoivent les styles par défaut */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Rendre l'utilisation d'images plus simple */
+img {
+  max-width: 100%;
+}
+
+/* Cadence et rythme naturels pour les éléments enfants d'éléments article par défaut */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Hérite les règles typographiques pour les éléments input et button */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Retire toutes les animations et transition pour les personnes qui préfèrent ne pas les voir */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
