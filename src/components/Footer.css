@@ -6,7 +6,8 @@
   height: 4em;
   background-color: #9ac2ba;
   position: fixed;
-  bottom: 0%;
+  bottom: 0;
+  left: 0;
 }
 
 a.facebook,

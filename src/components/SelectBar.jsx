@@ -61,7 +61,7 @@ const SelectBar = ({ onResultChange }) => {
 
   useEffect(() => {
     onResultChange(selectedValue, selectedSentence);
-  }, [selectedValue]);
+  }, );
 
   return (
     <div className='container-full-height'>
